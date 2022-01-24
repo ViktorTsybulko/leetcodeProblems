@@ -18,9 +18,8 @@ import java.util.Arrays;
 public class TwoSum {
 
     public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
         TwoSum twoSum = new TwoSum();
-        System.out.println(Arrays.toString(twoSum.twoSum(nums, 9)));
+        System.out.println(Arrays.toString(twoSum.twoSum(new int[] {2, 7, 11, 15}, 9)));
     }
 
     public int[] twoSum(int[] nums, int target) {
