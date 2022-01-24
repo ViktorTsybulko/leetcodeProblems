@@ -23,7 +23,7 @@ package com.company;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-public class AddTwoNumbers {
+/*public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode l3 = null, head;
@@ -94,4 +94,4 @@ public class AddTwoNumbers {
         }
         return head;
     }
-}
+}*/
