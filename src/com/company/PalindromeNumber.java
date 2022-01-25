@@ -15,10 +15,11 @@ public class PalindromeNumber {
     }
 
     public boolean isPalindrome(int x) {
-        String result = x < 0 ? -x + "-"
-                : String.valueOf(x);
+        String result = x < 0 ? -x + "-" : String.valueOf(x);
+
         String result1 = x < 0 ? new StringBuilder(String.valueOf(-x)).append("-").reverse().toString()
                 : new StringBuilder(String.valueOf(x)).reverse().toString();
+
         return result.equals(result1);
     }
 }

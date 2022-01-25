@@ -27,18 +27,22 @@ public class MedianOfTwoSortedArrays {
         int[] array = new int[nums1.length + nums2.length];
         int i = 0, j = 0, k = 0;
 
-        while (i < nums1.length && j < nums2.length) {
-            array[k++] = nums1[i] < nums2[j] ? nums1[i++] :  nums2[j++];}
+        while ((i < nums1.length) && (j < nums2.length)) {
+            array[k++] = nums1[i] < nums2[j] ? nums1[i++] : nums2[j++];
+        }
 
         while (i < nums1.length) {
-            array[k++] = nums1[i++];}
+            array[k++] = nums1[i++];
+        }
 
         while (j < nums2.length) {
-            array[k++] = nums2[j++];}
+            array[k++] = nums2[j++];
+        }
 
         if (array.length % 2 == 0) {
-            return ((double)array[array.length/2] + (double)array[array.length/2 - 1])/2;}
-        else {
-            return array[array.length/2];}
+            return ((double)array[array.length / 2] + (double)array[array.length/2 - 1]) / 2;
+        } else {
+            return array[array.length / 2];
+        }
     }
 }

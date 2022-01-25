@@ -19,6 +19,7 @@ public class ValidParentheses {
     }
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack();
+
         for(char ch : s.toCharArray()) {
             if(isOpenParenthesis(ch)) {
                 stack.push(ch);
@@ -32,7 +33,6 @@ public class ValidParentheses {
                 }
             }
         }
-
         return stack.isEmpty();
     }
 

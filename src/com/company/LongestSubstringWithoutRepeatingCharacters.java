@@ -31,7 +31,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
             if (map.containsKey(s.charAt(j))) {
                 i = Math.max(map.get(s.charAt(j)), i);
             }
-            result  = Math.max(result, j - i + 1);
+            result = Math.max(result, j - i + 1);
             map.put(s.charAt(j), j + 1);
         }
         return result;
